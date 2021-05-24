@@ -3,6 +3,18 @@
         {
             "icon": "github",
             "Link": "https://github.com/TheBrodaCoder"
+        },
+        {
+            "icon": "linkedin",
+            "Link": "https://www.linkedin.com/in/ruben-alejandro-tigre-rengel-20b894116/"
+        },
+        {
+            "icon": "email",
+            "Link": "donowenrt@gmail.com"
+        },
+        {
+            "icon": "pdf",
+            "Link": "servePDF"
         }
     ]
 }

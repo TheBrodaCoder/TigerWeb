@@ -1,4 +1,3 @@
-import './App.css';
 import ProfilePic from './component/profilePic/ProfilePic';
 
 function App() {
