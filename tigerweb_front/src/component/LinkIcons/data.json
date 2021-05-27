@@ -11,10 +11,6 @@
         {
             "icon": "email",
             "Link": "donowenrt@gmail.com"
-        },
-        {
-            "icon": "pdf",
-            "Link": "servePDF"
         }
     ]
 }

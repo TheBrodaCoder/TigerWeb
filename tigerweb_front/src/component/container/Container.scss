@@ -1,0 +1,25 @@
+.card {
+    position: relative;
+    
+}
+
+.info-block {
+    background: #EDEFF1;
+    margin-top: 6em;
+    padding: 2em;
+    padding-top: 4em;
+    border-radius: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vw;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 20vh;
+    border-radius: 4em;
+    position: relative;
+    display: block;
+    position: absolute;
+    top: -36%;
+    left: 40%;
+}

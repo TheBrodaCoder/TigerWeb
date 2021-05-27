@@ -1,0 +1,19 @@
+.List-Grid {
+    display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". List-Icons ."
+      ". . .";
+}
+  
+  .List-Icons {
+    grid-area: List-Icons;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.3em;
+}
+  

@@ -1,9 +1,14 @@
-import ProfilePic from './component/profilePic/ProfilePic';
+import './App.scss'
+import Container from './component/container/Container'
+
 
 function App() {
   return (
-    <div className="App">
-      <ProfilePic/>
+    <div className='grid-container'>
+      <div id='stars'/>
+      <div className="App">
+        <Container/>
+      </div>
     </div>
   );
 }
