@@ -1,6 +1,9 @@
 .card {
     position: relative;
-    
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    animation: slide-in 2s forwards;
+    -webkit-animation: slide-in 2s forwards;
 }
 
 .info-block {
@@ -12,6 +15,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1vw;
     flex-wrap: wrap;
+    
 }
 
 img {
@@ -22,4 +26,49 @@ img {
     position: absolute;
     top: -36%;
     left: 40%;
+}
+
+@keyframes bounce-up-down {
+    40% {
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateY(40px) rotate(-1deg);
+    }
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        position: relative;
+        width: 90%;
+        height: 90%;
+    }
+
+
+    img {
+        width: 16vh;
+        border-radius: 4em;
+        position: relative;
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 40%;
+    }
+
+    .info-block {
+        background: #EDEFF1;
+        margin-top: 6em;
+        padding: 1em;
+        border-radius: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
 }

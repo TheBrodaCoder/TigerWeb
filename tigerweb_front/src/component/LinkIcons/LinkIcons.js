@@ -9,7 +9,6 @@ const LinkIcons = () => {
         let rendered = links.map(link => {
             return <Icons key={link.icon} link={link.Link} icon={link.icon} />
         })
-        console.log(rendered)
         return rendered
     }
 
