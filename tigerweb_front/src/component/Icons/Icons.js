@@ -6,7 +6,7 @@ import { ReactComponent as GmailLogo } from './email.svg'
 import { ReactComponent as LinkedinLogo } from './linkedin.svg'
 import { ReactComponent as PdfLogo } from './pdf.svg'
 //cv
-import pdf from './CV_Junior_Developer_Ruben_Tigre_06052021.pdf'
+import pdf from './CV_Junior_Developer_Ruben_Tigre_30052021.pdf'
 //style
 import './Icons.scss'
 
