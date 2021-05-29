@@ -24,7 +24,7 @@ img {
     position: relative;
     display: block;
     position: absolute;
-    top: -25%;
+    top: -20%;
     left: 40%;
 }
 
@@ -45,6 +45,13 @@ span, a {
     background-color: orange;
 }
 
+#fullstack {
+    background-color: lightcoral;
+}
+
+#github-repository {
+    background-color: #52DF56;
+}
 
 
 @keyframes slide-in {
