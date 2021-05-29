@@ -4,14 +4,12 @@ import Container from './component/container/Container'
 
 function App() {
   return (
-    <div className='grid-container' onLoad={() => window.scroll(0, 5000)}>
+    <div className='grid-container'>
       <div id='stars'/>
       <div className="App">
         <Container/>
       </div>
-      <div className='TopRight'>
-
-      </div>
+      
     </div>
   );
 }

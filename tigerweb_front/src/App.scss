@@ -12,7 +12,10 @@ $shadows-small:  multiple-box-shadow(700);
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
+
 html { overflow: hidden;}
 
 #root {
@@ -52,7 +55,7 @@ html { overflow: hidden;}
   &:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    top: 1000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -80,22 +83,27 @@ html { overflow: hidden;}
 
 @media only screen and (max-width: 600px) {
   body {
-    height: 250vw;
+    height: 100vh;
+    width: 100vw;
     background: radial-gradient(ellipse at bottom, #0053A0 0%, #031D34 55%, #000000 100%);
   }
 
   .grid-container {
   width: 100vw;
   height: 100vh;
+  max-height: 900px;
+
   display: grid;
   grid-template-columns: 0.4fr 2.2fr 0.4fr;
   grid-template-rows: 0.2fr 2.6fr 0.2fr;
   gap: 0px 0px;
+  overflow-y: scroll;
   grid-template-areas:
     ". . ."
     ". App ."
     ". . .";
 }
+
 
   
 }

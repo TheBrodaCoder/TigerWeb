@@ -4,16 +4,16 @@
     -webkit-transform: translateX(-100%);
     animation: slide-in 2.5s forwards ease-in;
     -webkit-animation: slide-in 2.5s forwards;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .info-block {
     background: #EDEFF1;
-    margin-top: 6em;
+    margin-top: 5em;
     padding: 2em;
-    padding-top: 4em;
+    padding-top: 2em;
     border-radius: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     flex-wrap: wrap;
     
 }
@@ -24,13 +24,27 @@ img {
     position: relative;
     display: block;
     position: absolute;
-    top: -36%;
+    top: -25%;
     left: 40%;
 }
 
 p, h1 {
     animation: fadeIn ease-out 3s;
 }
+
+span, a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact{
+    background-color: red;
+}
+
+#Mern {
+    background-color: orange;
+}
+
 
 
 @keyframes slide-in {
@@ -52,6 +66,8 @@ p, h1 {
         width: 90%;
         height: 90%;
         align-self: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     }
 
 
@@ -61,18 +77,17 @@ p, h1 {
         position: relative;
         display: block;
         position: absolute;
-        top: -12%;
+        top: -10%;
         left: 70%;
     }
 
     .info-block {
         background: #EDEFF1;
-        margin-top: 6em;
+        margin-top: 7em;
         padding: 1em;
         width: 100%;
         border-radius: 1em;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1em;
-        flex-wrap: wrap;
     }
 }
+
