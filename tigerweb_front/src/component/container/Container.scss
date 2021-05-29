@@ -11,7 +11,7 @@
     background: #EDEFF1;
     margin-top: 5em;
     padding: 2em;
-    padding-top: 2em;
+    padding-top: 1em;
     border-radius: 1em;
     font-size: 1.2vw;
     flex-wrap: wrap;
@@ -35,6 +35,11 @@ p, h1 {
 span, a {
     text-decoration: none;
     color: white;
+}
+
+span {
+    border-radius: 5px;
+    padding: 3px;
 }
 
 #contact{
