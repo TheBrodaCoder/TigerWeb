@@ -70,13 +70,31 @@ html { overflow: hidden;}
     }
 }
 
+@keyframes bounce-up-down {
+  40% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(40px) rotate(-1deg);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     height: 250vw;
     background: radial-gradient(ellipse at bottom, #0053A0 0%, #031D34 55%, #000000 100%);
   }
 
-  #root {
-    overflow-y: scroll;
-  }
+  .grid-container {
+  width: 100vw;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". App ."
+    ". . .";
+}
+
+  
 }

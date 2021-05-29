@@ -12,19 +12,18 @@ import './Icons.scss'
 
 const Icons = (props) => {
 
-    const svgStyle = {width: '3em', height: '3em', display: 'block', margin: 'auto', alignSelf: 'center'}
 
     const getIcon = (name) => {
         switch(name) {
             case 'github':
-                return <a href={props.link} target='_blank' rel='noreferrer'><GithubLogo className='logo' style={svgStyle}/></a>
+                return <a href={props.link} target='_blank' rel='noreferrer'><GithubLogo className='logo' /></a>
             case 'linkedin':
-                return <a href={props.link} target='_blank' rel='noreferrer'><LinkedinLogo className='logo' style={svgStyle}/></a>
+                return <a href={props.link} target='_blank' rel='noreferrer'><LinkedinLogo className='logo' /></a>
             case 'email':
-                return <a href={`mailto: ${props.link}`} target='_blank' rel='noreferrer'><GmailLogo className='logo' style={svgStyle}/></a>
+                return <a href={`mailto: ${props.link}`} target='_blank' rel='noreferrer'><GmailLogo className='logo' /></a>
             case 'cv':
                 //you must upload your cv to this folder
-                return <a href={pdf} target='_blank' rel='noreferrer'><PdfLogo className='logo' style={svgStyle}/></a>
+                return <a href={pdf} target='_blank' rel='noreferrer'><PdfLogo className='logo' /></a>
             default:
                 return null
         }
@@ -32,7 +31,7 @@ const Icons = (props) => {
 
     
     return (
-        <div style={{position: 'relative', width: 'auto', height: 'auto'}}>
+        <div className='icon-container'>
           {getIcon(props.icon)}
         </div>
     )

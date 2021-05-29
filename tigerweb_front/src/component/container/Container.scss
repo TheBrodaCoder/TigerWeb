@@ -2,8 +2,8 @@
     position: relative;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
-    animation: slide-in 2s forwards;
-    -webkit-animation: slide-in 2s forwards;
+    animation: slide-in 2.5s forwards ease-in;
+    -webkit-animation: slide-in 2.5s forwards;
 }
 
 .info-block {
@@ -28,12 +28,10 @@ img {
     left: 40%;
 }
 
-@keyframes bounce-up-down {
-    40% {
-      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateY(40px) rotate(-1deg);
-    }
+p, h1 {
+    animation: fadeIn ease-out 3s;
 }
+
 
 @keyframes slide-in {
     100% { transform: translateX(0%); }
@@ -43,29 +41,35 @@ img {
     100% { -webkit-transform: translateX(0%); }
 }
 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 @media screen and (max-width: 600px) {
     .card {
         position: relative;
         width: 90%;
         height: 90%;
+        align-self: center;
     }
 
 
     img {
-        width: 16vh;
+        width: 14vh;
         border-radius: 4em;
         position: relative;
         display: block;
         position: absolute;
-        top: 0%;
-        left: 40%;
+        top: -12%;
+        left: 70%;
     }
 
     .info-block {
         background: #EDEFF1;
         margin-top: 6em;
         padding: 1em;
+        width: 100%;
         border-radius: 1em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1em;
