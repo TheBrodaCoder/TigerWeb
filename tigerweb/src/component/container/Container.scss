@@ -1,3 +1,19 @@
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+
 .card {
     position: relative;
     transform: translateX(-100%);
@@ -5,6 +21,21 @@
     animation: slide-in 2.5s forwards ease-in;
     -webkit-animation: slide-in 2.5s forwards;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    @include for-phone-only() {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        align-self: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    @include for-tablet-portrait-up() {
+        width: 100%;
+        height: 100%;
+    }
+
+    
 }
 
 .info-block {
@@ -15,17 +46,61 @@
     border-radius: 1em;
     font-size: 1.2vw;
     flex-wrap: wrap;
+
+        @include for-phone-only() {
+            background: #EDEFF1;
+            margin-top: 7em;
+            padding: 1em;
+            width: 100%;
+            border-radius: 1em;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        @include for-tablet-portrait-up() {
+            font-size: 1.1em;
+        }
+
+        @include for-tablet-landscape-up() {
+            font-size: 1.2em;
+        }
     
 }
 
 img {
-    width: 20vh;
+
     border-radius: 4em;
     position: relative;
     display: block;
     position: absolute;
     top: -20%;
     left: 40%;
+
+        @include for-phone-only() {
+            width: 14vh;
+            border-radius: 4em;
+            position: relative;
+            display: block;
+            position: absolute;
+            top: -10%;
+            left: 70%;
+        }
+
+        @include for-tablet-portrait-up() {
+            width: 16vh;
+            left: 70%;
+            top: -12%;
+        }
+
+        @include for-tablet-landscape-up() {
+            width: 15vw;
+        }
+        
+        @include for-desktop-up(){
+            top: -17%;
+            left: 40%;
+            width: 18vh;
+        }
 }
 
 p, h1 {
@@ -72,34 +147,6 @@ span {
     100% {opacity:1;}
   }
 
-@media screen and (max-width: 600px) {
-    .card {
-        position: relative;
-        width: 90%;
-        height: 90%;
-        align-self: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    }
 
 
-    img {
-        width: 14vh;
-        border-radius: 4em;
-        position: relative;
-        display: block;
-        position: absolute;
-        top: -10%;
-        left: 70%;
-    }
-
-    .info-block {
-        background: #EDEFF1;
-        margin-top: 7em;
-        padding: 1em;
-        width: 100%;
-        border-radius: 1em;
-        font-size: 1em;
-    }
-}
 
