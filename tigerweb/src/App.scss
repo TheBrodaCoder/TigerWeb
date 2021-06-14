@@ -25,6 +25,13 @@ $shadows-small:  multiple-box-shadow(700);
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+@mixin for-iphoneXS {
+  @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { @content; }
+}
+
 
 body {
   margin: 0;
@@ -56,6 +63,10 @@ html { overflow: hidden;}
       overflow: hidden;
     }
 
+    @include for-iphoneXS() {
+      overflow-y: scroll;
+    }
+
 }
 
 .grid-container {
@@ -69,6 +80,8 @@ html { overflow: hidden;}
     ". . TopRight"
     ". App ."
     ". . .";
+    
+    
 }
 .App { 
   grid-area: App; 

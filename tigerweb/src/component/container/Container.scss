@@ -26,6 +26,7 @@
         position: relative;
         width: 90%;
         height: 90%;
+        margin-bottom: 9em;
         align-self: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -41,7 +42,7 @@
 .info-block {
     background: #EDEFF1;
     margin-top: 5em;
-    padding: 2em;
+    padding: 1em;
     padding-top: 1em;
     border-radius: 1em;
     font-size: 1.2vw;
@@ -87,7 +88,7 @@ img {
         }
 
         @include for-tablet-portrait-up() {
-            width: 16vh;
+            width: 15vw;
             left: 70%;
             top: -12%;
         }
@@ -146,7 +147,3 @@ span {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-
-
-
-

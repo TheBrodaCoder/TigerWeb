@@ -27,9 +27,7 @@ const Container = () => {
                 <br/>
                 Feel free to <span id='contact'><a href='mailto:donowenrt@gmail.com'>contact</a></span> me if you have any questions or proposals for me.
                 </p>
-                
             <LinkIcons/>
-            
             </div>
         </div>
     )
