@@ -38,6 +38,8 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  
 }
 
 html { overflow: hidden;}
@@ -49,21 +51,28 @@ html { overflow: hidden;}
 
     @include for-phone-only() {
       overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
     }
 
     @include for-tablet-portrait-up() {
       overflow-y: scroll;
+      overflow-x: hidden;
     }
 
     @include for-desktop-up() {
+      overflow-x: hidden;
       overflow: hidden;
     }
 
     @include for-big-desktop-up() {
+      overflow-x: hidden;
       overflow: hidden;
     }
 
     @include for-iphoneXS() {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
       overflow-y: scroll;
     }
 
