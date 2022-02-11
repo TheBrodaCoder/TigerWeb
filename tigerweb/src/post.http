@@ -1,9 +1,0 @@
-POST https://api-free.deepl.com/v2/translate?auth_key=5b4fece8-feab-d85a-0edf-77aff9d79661:fx HTTP/1.1
-User-Agent: YourApp
-Accept: */*
-Content-Length: 137
-Content-Type: application/x-www-form-urlencoded
-
-auth_key=5b4fece8-feab-d85a-0edf-77aff9d79661:fx&text= My name is Ruben Tigre, im a Junior Full-Stack Developer in active job searching.
-
-                    Actually im inm&target_lang=ES
