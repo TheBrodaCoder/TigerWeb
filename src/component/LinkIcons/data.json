@@ -1,19 +1,19 @@
 {
-    "icons": [
-        
-        {
-            "icon": "linkedin",
-            "Link": "https://www.linkedin.com/in/ruben-alejandro-tigre-rengel-20b894116/"
-        },
-        {
-            "icon": "github",
-            "Link": "https://github.com/TheBrodaCoder"
-        },
-        {
-            "icon": "email",
-            "Link": "donowenrt@gmail.com"
-        }, {
-            "icon": "cv"
-        }
-    ]
+  "icons": [
+    {
+      "icon": "linkedin",
+      "Link": "https://www.linkedin.com/in/ruben-tigre/"
+    },
+    {
+      "icon": "github",
+      "Link": "https://github.com/TheBrodaCoder"
+    },
+    {
+      "icon": "email",
+      "Link": "donowenrt@gmail.com"
+    },
+    {
+      "icon": "cv"
+    }
+  ]
 }

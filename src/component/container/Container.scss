@@ -91,7 +91,7 @@ img {
     position: relative;
     display: block;
     position: absolute;
-    top: -10%;
+    top: -50px;
     left: 70%;
   }
 
@@ -107,8 +107,15 @@ img {
 
   @include for-desktop-up() {
     top: -17%;
-    left: 40%;
-    width: 18vh;
+    left: 42%;
+    width: 20vh;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  @include for-phone-only() {
+    font-size: 32px;
   }
 }
 
@@ -118,44 +125,18 @@ h1 {
   line-height: 2em;
 }
 
-span,
-a {
-  text-decoration: none;
-  color: white;
-}
-
-span {
-  border-radius: 5px;
-  padding: 3px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#contact {
-  background-color: #52df56;
-}
-
-#Mern {
-  background-color: orange;
-}
-
-#fullstack {
-  background-color: lightcoral;
-}
-
-#github-repository {
-  background-color: #b159ff;
-}
-
-#enterprise {
-  background-color: #5977ff;
-}
 h1,
 .subtitle,
 .description {
   font-family: "Roboto Condensed";
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  @include for-phone-only() {
+    font-size: 20px;
+  }
 }
 
 @keyframes slide-in {

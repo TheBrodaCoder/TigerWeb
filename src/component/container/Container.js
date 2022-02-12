@@ -2,6 +2,7 @@ import React from "react";
 import "./Container.scss";
 import ProfilePic from "../profilePic/ProfilePic";
 import LinkIcons from "../LinkIcons/LinkIcons";
+import Badge from "../badge";
 
 const Container = () => {
   return (
@@ -10,27 +11,36 @@ const Container = () => {
       <div className="info-block">
         <h1>Welcome!</h1>
         <p className="subtitle">
-          My name is Ruben Tigre, I am a React Developer for
-          <span id="enterprise">IoBuilders</span>.
-        </p>
-        <p className="description">
-          After finishing my studies I decided to specialize in the development
-          sector, for this I used different resources such as 'The Modern React
-          Bootcamp' by Colt Steele and
-          <span id="fullstack">
+          My name is Ruben Tigre, I'm currently working as Junior React
+          Developer in
+          <Badge variant="enterprise">
             <a
-              href="https://fullstackopen.com/en/about"
+              href="https://www.linkedin.com/company/iobuilders"
               rel="noreferrer"
               target="_blank"
             >
-              'Full Stack Open'
+              IoBuilders
             </a>
-          </span>
-          by the University of Helsinki.
+          </Badge>
+        </p>
+        <p className="description">
+          My current role in the team is to develop the different views and
+          requirements defined by the creative team to meet the demands of our
+          product, a{" "}
+          <Badge variant="NFT">
+            <a
+              href="https://en.wikipedia.org/wiki/Non-fungible_token"
+              target="_blank"
+              rel="noreferrer"
+            >
+              NFTs marketplace
+            </a>
+          </Badge>{" "}
+          for big brands of the world.
         </p>
         <p className="description">
           In my github you will find the project of this
-          <span id="github-repository">
+          <Badge variant="github-repository">
             <a
               href="https://github.com/TheBrodaCoder/TigerWeb"
               target="_blank"
@@ -38,15 +48,15 @@ const Container = () => {
             >
               website
             </a>
-          </span>
+          </Badge>
           , as well as different projects and deliveries. I love to keep working
           and learning, so you'll probably see some activity!
         </p>
-        <p className="subtitle">
+        <p className="description">
           Feel free to
-          <span id="contact">
+          <Badge variant="contact">
             <a href="mailto:donowenrt@gmail.com">contact</a>
-          </span>
+          </Badge>
           me if you have any questions or proposals for me.
         </p>
         <LinkIcons />
